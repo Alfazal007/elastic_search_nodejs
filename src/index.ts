@@ -7,6 +7,7 @@ import { elasticClient } from "./configs/elasticClient";
 import { getWithSomeMathches } from "./configs/getDataAgg1";
 import { getAgger, getAgger2 } from "./configs/getDataAgg2";
 import { getDataPaginatedAndSorted } from "./configs/getDataPaginated";
+import { getSearchData } from "./configs/getSearchResult";
 import { updateMappings } from "./configs/updateMappings";
 
 async function main() {
@@ -14,16 +15,17 @@ async function main() {
 	try {
 		const resPing = await client.ping({ pretty: true })
 		console.log({ resPing })
-		await createMapping(client);
-		await updateMappings(client);
-		await deleteMapping(client);
-		await addData(client);
-		await deleteData(client);
-		await getDataPaginatedAndSorted(client);
-		await getWithSomeMathches(client);
-		await addRatings(client);
-		await getAgger(client);
-		await getAgger2(client);
+		//		await createMapping(client);
+		//		await updateMappings(client);
+		//await deleteMapping(client);
+		//await addData(client);
+		//await deleteData(client);
+		//		await getDataPaginatedAndSorted(client);
+		//		await getWithSomeMathches(client);
+		//		await addRatings(client);
+		//		await getAgger(client);
+		//		await getAgger2(client)
+		await getSearchData(client);
 	} catch (err) {
 		console.log("There was an error connecting")
 		console.log(err);

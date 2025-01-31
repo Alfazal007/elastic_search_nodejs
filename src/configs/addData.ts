@@ -9,6 +9,7 @@ export async function addData(client: Client) {
 		director: "Christopher Nolan",
 		actor: "Someone1"
 	}
+
 	/*
 		const document1 = {
 			year: 2023,
@@ -34,6 +35,7 @@ export async function addData(client: Client) {
 			actor: "Someone1"
 		};
 	*/
+
 	try {
 		const moviesIndex = await client.index({
 			index: "movies",

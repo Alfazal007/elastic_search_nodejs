@@ -8,7 +8,7 @@ export async function elasticClient() {
 		node: 'https://127.0.0.1:9200',
 		auth: {
 			username: 'elastic',
-			password: 'dummypassword'
+			password: 'Q9YdVPU_V7J-q+7GU0Qm'
 		},
 		tls: {
 			ca: fs.readFileSync(certPath, "utf8")

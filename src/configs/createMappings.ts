@@ -37,6 +37,7 @@ export async function createMapping(client: Client) {
 				}
 			}
 		});
+
 		console.log(`Index ratings created with mappings`);
 		console.log(ratingIndex)
 	} catch (error: any) {
